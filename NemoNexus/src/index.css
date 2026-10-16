@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+    background-color: #050505;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(118, 255, 122, 0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(118, 255, 122, 0.4);
+}
+
+/* Selection */
+::selection {
+    background: rgba(118, 255, 122, 0.25);
+    color: #76FF7A;
+}
+
+/* Range input styling */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3px;
+    background: rgba(118, 255, 122, 0.2);
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #76FF7A;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(118, 255, 122, 0.5);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #76FF7A;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 6px rgba(118, 255, 122, 0.5);
+}
+
+/* DateTime input styling */
+input[type="datetime-local"] {
+    color-scheme: dark;
+}
+
+/* Select option styling */
+select option {
+    background: #0a0a0a;
+    color: #76FF7A;
+}
